@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wilma • Gestão do grupo</title>
+<meta name="theme-color" content="#0E1F1A">
+<meta name="robots" content="noindex">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Wilma">
+<style>
+  html, body { margin: 0; height: 100%; background: #0E1F1A; color: #E8F2EC; font: 15px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  #load { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; }
+  #load img { width: 96px; height: 96px; border-radius: 22px; }
+  #load p { margin: 0; opacity: .75; }
+  #load a { color: inherit; opacity: .8; }
+  #app { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; opacity: 0; transition: opacity .25s; }
+  #app.on { opacity: 1; }
+  @media (prefers-reduced-motion: reduce) { #app { transition: none; } }
+</style>
+</head>
+<body>
+<div id="load"><img src="icon-192.png" alt=""><p>Abrindo o sistema…</p><a id="direct" href="https://script.google.com/macros/s/AKfycbw5Q_hgruANHFtB7uZq1Uoazs0Npyi2mhcI9rZSfK-K4YwdLiv5cng0f7BFySngd_e_/exec" hidden>Demorando? Abrir direto</a></div>
+<iframe id="app" title="Wilma • Gestão do grupo" src="https://script.google.com/macros/s/AKfycbw5Q_hgruANHFtB7uZq1Uoazs0Npyi2mhcI9rZSfK-K4YwdLiv5cng0f7BFySngd_e_/exec" allow="clipboard-read; clipboard-write; camera; fullscreen"></iframe>
+<script>
+  var f = document.getElementById('app');
+  f.addEventListener('load', function () { f.classList.add('on'); });
+  setTimeout(function () { document.getElementById('direct').hidden = false; }, 20000);
+</script>
+</body>
+</html>
